@@ -17,6 +17,8 @@ namespace SimpleEditor
             toggleAlignView();
         }
 
+        # region internal methods
+
         private void enableSelectionCtrlView(bool status = true)
         {
             cmdCopy.Enabled = status;
@@ -49,10 +51,67 @@ namespace SimpleEditor
             }
         }
 
+        private void toggleFontView()
+        {
+            if (richTextBox.SelectionFont != null)
+            {
+                if (richTextBox.SelectionFont.Bold)
+                {
+                    cmdBold.Checked = true;
+                }
+                else
+                {
+                    cmdBold.Checked = false;
+                }
+
+                if (richTextBox.SelectionFont.Italic)
+                {
+                    cmdItalic.Checked = true;
+                }
+                else
+                {
+                    cmdItalic.Checked = false;
+                }
+
+                if (richTextBox.SelectionFont.Underline)
+                {
+                    cmdUnderline.Checked = true;
+                }
+                else
+                {
+                    cmdUnderline.Checked = false;
+                }
+
+                if (richTextBox.SelectionFont.Strikeout)
+                {
+                    cmdStrikeout.Checked = true;
+                }
+                else
+                {
+                    cmdStrikeout.Checked = false;
+                }
+            }
+        }
+
+        private void toggleBulletView()
+        {
+            if (richTextBox.SelectionBullet)
+            {
+                cmdBullets.Checked = true;
+            }
+            else
+            {
+                cmdBullets.Checked = false;
+            }
+        }
+
+        # endregion
+
+        # region event handlers
+
         private void cmdOpen_Click(object sender, EventArgs e)
         {
             openFileDialog.Filter = "File Teks Berformat (*.rtf)|*.rtf|File Teks (*.txt)|*.txt";
-
             if (openFileDialog.ShowDialog() == DialogResult.OK && !String.IsNullOrWhiteSpace(openFileDialog.FileName))
             {
                 if (openFileDialog.FilterIndex == 1)
@@ -148,7 +207,7 @@ namespace SimpleEditor
                 newStyle |= FontStyle.Bold;
             }
             richTextBox.SelectionFont = new Font(richTextBox.SelectionFont, newStyle);
-            cmdBold.Checked = true;
+            toggleFontView();
         }
 
         private void cmdItalic_Click(object sender, EventArgs e)
@@ -163,7 +222,7 @@ namespace SimpleEditor
                 newStyle |= FontStyle.Italic;
             }
             richTextBox.SelectionFont = new Font(richTextBox.SelectionFont, newStyle);
-            cmdItalic.Checked = true;
+            toggleFontView();
         }
 
         private void cmdUnderline_Click(object sender, EventArgs e)
@@ -178,7 +237,7 @@ namespace SimpleEditor
                 newStyle |= FontStyle.Underline;
             }
             richTextBox.SelectionFont = new Font(richTextBox.SelectionFont, newStyle);
-            cmdUnderline.Checked = true;
+            toggleFontView();
         }
 
         private void cmdStrikeout_Click(object sender, EventArgs e)
@@ -193,7 +252,7 @@ namespace SimpleEditor
                 newStyle |= FontStyle.Strikeout;
             }
             richTextBox.SelectionFont = new Font(richTextBox.SelectionFont, newStyle);
-            cmdStrikeout.Checked = true;
+            toggleFontView();
         }
 
         private void cmdFont_Click(object sender, EventArgs e)
@@ -223,24 +282,25 @@ namespace SimpleEditor
         private void cmdAlignLeft_Click(object sender, EventArgs e)
         {
             richTextBox.SelectionAlignment = HorizontalAlignment.Left;
-            cmdAlignLeft.Checked = true;
+            toggleAlignView();
         }
 
         private void cmdAlignCenter_Click(object sender, EventArgs e)
         {
             richTextBox.SelectionAlignment = HorizontalAlignment.Center;
-            cmdAlignCenter.Checked = true;
+            toggleAlignView();
         }
 
         private void cmdAlignRight_Click(object sender, EventArgs e)
         {
             richTextBox.SelectionAlignment = HorizontalAlignment.Right;
-            cmdAlignRight.Checked = true;
+            toggleAlignView();
         }
 
         private void cmdBullets_Click(object sender, EventArgs e)
         {
             richTextBox.SelectionBullet = !richTextBox.SelectionBullet;
+            toggleBulletView();
         }
 
         private void cmdIndent_Click(object sender, EventArgs e)
@@ -260,79 +320,27 @@ namespace SimpleEditor
             toggleFontView();
 
             var status = new StringBuilder();
-
             if (richTextBox.SelectionLength > 0)
             {
                 enableSelectionCtrlView();
+
                 int lines = richTextBox.GetLineFromCharIndex(richTextBox.SelectionStart + richTextBox.SelectionLength) -
                     richTextBox.GetLineFromCharIndex(richTextBox.SelectionStart) + 1;
-
                 status.Append(lines)
-                    .Append(" Baris, ");
-
-                status.Append(richTextBox.SelectionLength)
+                    .Append(" Baris, ")
+                    .Append(richTextBox.SelectionLength)
                     .Append(" Karakter Terseleksi");
             }
             else
             {
                 enableSelectionCtrlView(false);
+                
                 status.Append("Baris ")
                     .Append(richTextBox.GetLineFromCharIndex(richTextBox.GetFirstCharIndexOfCurrentLine()) + 1)
                     .Append(", Kolom ")
                     .Append(richTextBox.SelectionStart - richTextBox.GetFirstCharIndexOfCurrentLine() + 1);
             }
             statusLabel.Text = status.ToString();
-        }
-
-        private void toggleFontView()
-        {
-            if (richTextBox.SelectionFont.Bold)
-            {
-                cmdBold.Checked = true;
-            }
-            else
-            {
-                cmdBold.Checked = false;
-            }
-
-            if (richTextBox.SelectionFont.Italic)
-            {
-                cmdItalic.Checked = true;
-            }
-            else
-            {
-                cmdItalic.Checked = false;
-            }
-
-            if (richTextBox.SelectionFont.Underline)
-            {
-                cmdUnderline.Checked = true;
-            }
-            else
-            {
-                cmdUnderline.Checked = false;
-            }
-
-            if (richTextBox.SelectionFont.Strikeout)
-            {
-                cmdStrikeout.Checked = true;
-            }
-            else
-            {
-                cmdStrikeout.Checked = false;
-            }
-        }
-
-        private void toggleBulletView()
-        {
-            if (richTextBox.SelectionBullet)
-            {
-                cmdBullets.Checked = true;
-            }
-            else
-            {
-                cmdBullets.Checked = false;
-            }
         }
 
         private void cmdAbout_Click(object sender, EventArgs e)
@@ -344,5 +352,7 @@ namespace SimpleEditor
         {
             richTextBox.Clear();
         }
+
+        # endregion
     }
 }

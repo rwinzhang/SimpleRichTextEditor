@@ -429,7 +429,6 @@
             // 
             // cmdBullets
             // 
-            this.cmdBullets.CheckOnClick = true;
             this.cmdBullets.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             this.cmdBullets.Image = global::SimpleEditor.Properties.Resources.cmd_bullets;
             this.cmdBullets.ImageTransparentColor = System.Drawing.Color.Magenta;
@@ -440,7 +439,6 @@
             // 
             // cmdIndent
             // 
-            this.cmdIndent.CheckOnClick = true;
             this.cmdIndent.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             this.cmdIndent.Image = global::SimpleEditor.Properties.Resources.cmd_indent;
             this.cmdIndent.ImageTransparentColor = System.Drawing.Color.Magenta;
