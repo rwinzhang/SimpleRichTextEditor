@@ -365,6 +365,11 @@ namespace SimpleEditor
             richTextBox.SelectionFont = defaultFont;
         }
 
+        private void cmdZoom_Click(object sender, EventArgs e)
+        {
+            richTextBox.ZoomFactor = float.Parse((sender as ToolStripMenuItem).Tag.ToString());
+        }
+
         # endregion
     }
 }
