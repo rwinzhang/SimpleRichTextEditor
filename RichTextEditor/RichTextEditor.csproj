@@ -78,7 +78,9 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Images\cmd_clear_format.png" />
+  </ItemGroup>
   <ItemGroup>
     <None Include="Images\cmd_align_center.png" />
   </ItemGroup>

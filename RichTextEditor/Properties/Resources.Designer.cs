@@ -123,6 +123,16 @@ namespace SimpleEditor.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap cmd_clear_format {
+            get {
+                object obj = ResourceManager.GetObject("cmd_clear_format", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap cmd_copy {
             get {
                 object obj = ResourceManager.GetObject("cmd_copy", resourceCulture);

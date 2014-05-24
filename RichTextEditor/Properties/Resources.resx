@@ -136,6 +136,9 @@
   <data name="cmd_bullets" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Images\cmd_bullets.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="cmd_clear_format" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\cmd_clear_format.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="cmd_copy" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Images\cmd_copy.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>

@@ -31,50 +31,51 @@
             this.components = new System.ComponentModel.Container();
             this.richTextBox = new System.Windows.Forms.RichTextBox();
             this.contextMenuStrip = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.ctxCut = new System.Windows.Forms.ToolStripMenuItem();
-            this.ctxCopy = new System.Windows.Forms.ToolStripMenuItem();
-            this.ctxPaste = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator8 = new System.Windows.Forms.ToolStripSeparator();
-            this.ctxSelectAll = new System.Windows.Forms.ToolStripMenuItem();
-            this.ctxDelete = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStrip = new System.Windows.Forms.ToolStrip();
-            this.cmdOpen = new System.Windows.Forms.ToolStripButton();
-            this.cmdNew = new System.Windows.Forms.ToolStripButton();
-            this.cmdSave = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
-            this.cmdUndo = new System.Windows.Forms.ToolStripButton();
-            this.cmdRedo = new System.Windows.Forms.ToolStripButton();
-            this.cmdSelectAll = new System.Windows.Forms.ToolStripButton();
-            this.cmdDelete = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.cmdCut = new System.Windows.Forms.ToolStripButton();
-            this.cmdCopy = new System.Windows.Forms.ToolStripButton();
-            this.cmdPaste = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
-            this.cmdBold = new System.Windows.Forms.ToolStripButton();
-            this.cmdItalic = new System.Windows.Forms.ToolStripButton();
-            this.cmdUnderline = new System.Windows.Forms.ToolStripButton();
-            this.cmdStrikeout = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
-            this.cmdFont = new System.Windows.Forms.ToolStripButton();
-            this.cmdBackColor = new System.Windows.Forms.ToolStripButton();
-            this.cmdTextColor = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator5 = new System.Windows.Forms.ToolStripSeparator();
-            this.cmdAlignLeft = new System.Windows.Forms.ToolStripButton();
-            this.cmdAlignCenter = new System.Windows.Forms.ToolStripButton();
-            this.cmdAlignRight = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator6 = new System.Windows.Forms.ToolStripSeparator();
-            this.cmdBullets = new System.Windows.Forms.ToolStripButton();
-            this.cmdIndent = new System.Windows.Forms.ToolStripButton();
-            this.cmdUnindent = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator7 = new System.Windows.Forms.ToolStripSeparator();
-            this.cmdAbout = new System.Windows.Forms.ToolStripButton();
             this.openFileDialog = new System.Windows.Forms.OpenFileDialog();
             this.saveFileDialog = new System.Windows.Forms.SaveFileDialog();
             this.fontDialog = new System.Windows.Forms.FontDialog();
             this.colorDialog = new System.Windows.Forms.ColorDialog();
             this.statusStrip = new System.Windows.Forms.StatusStrip();
             this.statusLabel = new System.Windows.Forms.ToolStripStatusLabel();
+            this.cmdOpen = new System.Windows.Forms.ToolStripButton();
+            this.cmdNew = new System.Windows.Forms.ToolStripButton();
+            this.cmdSave = new System.Windows.Forms.ToolStripButton();
+            this.cmdUndo = new System.Windows.Forms.ToolStripButton();
+            this.cmdRedo = new System.Windows.Forms.ToolStripButton();
+            this.cmdSelectAll = new System.Windows.Forms.ToolStripButton();
+            this.cmdDelete = new System.Windows.Forms.ToolStripButton();
+            this.cmdCut = new System.Windows.Forms.ToolStripButton();
+            this.cmdCopy = new System.Windows.Forms.ToolStripButton();
+            this.cmdPaste = new System.Windows.Forms.ToolStripButton();
+            this.cmdBold = new System.Windows.Forms.ToolStripButton();
+            this.cmdItalic = new System.Windows.Forms.ToolStripButton();
+            this.cmdUnderline = new System.Windows.Forms.ToolStripButton();
+            this.cmdStrikeout = new System.Windows.Forms.ToolStripButton();
+            this.cmdFont = new System.Windows.Forms.ToolStripButton();
+            this.cmdBackColor = new System.Windows.Forms.ToolStripButton();
+            this.cmdTextColor = new System.Windows.Forms.ToolStripButton();
+            this.cmdClearFormat = new System.Windows.Forms.ToolStripButton();
+            this.cmdAlignLeft = new System.Windows.Forms.ToolStripButton();
+            this.cmdAlignCenter = new System.Windows.Forms.ToolStripButton();
+            this.cmdAlignRight = new System.Windows.Forms.ToolStripButton();
+            this.cmdBullets = new System.Windows.Forms.ToolStripButton();
+            this.cmdIndent = new System.Windows.Forms.ToolStripButton();
+            this.cmdUnindent = new System.Windows.Forms.ToolStripButton();
+            this.cmdAbout = new System.Windows.Forms.ToolStripButton();
+            this.ctxCut = new System.Windows.Forms.ToolStripMenuItem();
+            this.ctxCopy = new System.Windows.Forms.ToolStripMenuItem();
+            this.ctxPaste = new System.Windows.Forms.ToolStripMenuItem();
+            this.ctxSelectAll = new System.Windows.Forms.ToolStripMenuItem();
+            this.ctxDelete = new System.Windows.Forms.ToolStripMenuItem();
             this.contextMenuStrip.SuspendLayout();
             this.toolStrip.SuspendLayout();
             this.statusStrip.SuspendLayout();
@@ -109,50 +110,10 @@
             this.contextMenuStrip.Name = "contextMenuStrip";
             this.contextMenuStrip.Size = new System.Drawing.Size(123, 120);
             // 
-            // ctxCut
-            // 
-            this.ctxCut.Image = global::SimpleEditor.Properties.Resources.cmd_cut;
-            this.ctxCut.Name = "ctxCut";
-            this.ctxCut.Size = new System.Drawing.Size(122, 22);
-            this.ctxCut.Text = "Cut";
-            this.ctxCut.Click += new System.EventHandler(this.cmdCut_Click);
-            // 
-            // ctxCopy
-            // 
-            this.ctxCopy.Image = global::SimpleEditor.Properties.Resources.cmd_copy;
-            this.ctxCopy.Name = "ctxCopy";
-            this.ctxCopy.Size = new System.Drawing.Size(122, 22);
-            this.ctxCopy.Text = "Copy";
-            this.ctxCopy.Click += new System.EventHandler(this.cmdCopy_Click);
-            // 
-            // ctxPaste
-            // 
-            this.ctxPaste.Image = global::SimpleEditor.Properties.Resources.cmd_paste;
-            this.ctxPaste.Name = "ctxPaste";
-            this.ctxPaste.Size = new System.Drawing.Size(122, 22);
-            this.ctxPaste.Text = "Paste";
-            this.ctxPaste.Click += new System.EventHandler(this.cmdPaste_Click);
-            // 
             // toolStripSeparator8
             // 
             this.toolStripSeparator8.Name = "toolStripSeparator8";
             this.toolStripSeparator8.Size = new System.Drawing.Size(119, 6);
-            // 
-            // ctxSelectAll
-            // 
-            this.ctxSelectAll.Image = global::SimpleEditor.Properties.Resources.cmd_select_all;
-            this.ctxSelectAll.Name = "ctxSelectAll";
-            this.ctxSelectAll.Size = new System.Drawing.Size(122, 22);
-            this.ctxSelectAll.Text = "Select All";
-            this.ctxSelectAll.Click += new System.EventHandler(this.cmdSelectAll_Click);
-            // 
-            // ctxDelete
-            // 
-            this.ctxDelete.Image = global::SimpleEditor.Properties.Resources.cmd_delete;
-            this.ctxDelete.Name = "ctxDelete";
-            this.ctxDelete.Size = new System.Drawing.Size(122, 22);
-            this.ctxDelete.Text = "Delete";
-            this.ctxDelete.Click += new System.EventHandler(this.cmdDelete_Click);
             // 
             // toolStrip
             // 
@@ -180,6 +141,7 @@
             this.cmdFont,
             this.cmdBackColor,
             this.cmdTextColor,
+            this.cmdClearFormat,
             this.toolStripSeparator5,
             this.cmdAlignLeft,
             this.cmdAlignCenter,
@@ -196,6 +158,57 @@
             this.toolStrip.Size = new System.Drawing.Size(784, 33);
             this.toolStrip.TabIndex = 1;
             this.toolStrip.Text = "toolStrip";
+            // 
+            // toolStripSeparator1
+            // 
+            this.toolStripSeparator1.Name = "toolStripSeparator1";
+            this.toolStripSeparator1.Size = new System.Drawing.Size(6, 23);
+            // 
+            // toolStripSeparator2
+            // 
+            this.toolStripSeparator2.Name = "toolStripSeparator2";
+            this.toolStripSeparator2.Size = new System.Drawing.Size(6, 23);
+            // 
+            // toolStripSeparator3
+            // 
+            this.toolStripSeparator3.Name = "toolStripSeparator3";
+            this.toolStripSeparator3.Size = new System.Drawing.Size(6, 23);
+            // 
+            // toolStripSeparator4
+            // 
+            this.toolStripSeparator4.Name = "toolStripSeparator4";
+            this.toolStripSeparator4.Size = new System.Drawing.Size(6, 23);
+            // 
+            // toolStripSeparator5
+            // 
+            this.toolStripSeparator5.Name = "toolStripSeparator5";
+            this.toolStripSeparator5.Size = new System.Drawing.Size(6, 23);
+            // 
+            // toolStripSeparator6
+            // 
+            this.toolStripSeparator6.Name = "toolStripSeparator6";
+            this.toolStripSeparator6.Size = new System.Drawing.Size(6, 23);
+            // 
+            // toolStripSeparator7
+            // 
+            this.toolStripSeparator7.Name = "toolStripSeparator7";
+            this.toolStripSeparator7.Size = new System.Drawing.Size(6, 23);
+            // 
+            // statusStrip
+            // 
+            this.statusStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.statusLabel});
+            this.statusStrip.Location = new System.Drawing.Point(0, 539);
+            this.statusStrip.Name = "statusStrip";
+            this.statusStrip.Size = new System.Drawing.Size(784, 22);
+            this.statusStrip.TabIndex = 2;
+            this.statusStrip.Text = "statusStrip";
+            // 
+            // statusLabel
+            // 
+            this.statusLabel.Name = "statusLabel";
+            this.statusLabel.Size = new System.Drawing.Size(91, 17);
+            this.statusLabel.Text = "Baris 1, Kolom 1";
             // 
             // cmdOpen
             // 
@@ -226,11 +239,6 @@
             this.cmdSave.Size = new System.Drawing.Size(23, 20);
             this.cmdSave.Text = "Save";
             this.cmdSave.Click += new System.EventHandler(this.cmdSave_Click);
-            // 
-            // toolStripSeparator1
-            // 
-            this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(6, 23);
             // 
             // cmdUndo
             // 
@@ -272,11 +280,6 @@
             this.cmdDelete.Text = "Delete";
             this.cmdDelete.Click += new System.EventHandler(this.cmdDelete_Click);
             // 
-            // toolStripSeparator2
-            // 
-            this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(6, 23);
-            // 
             // cmdCut
             // 
             this.cmdCut.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
@@ -306,11 +309,6 @@
             this.cmdPaste.Size = new System.Drawing.Size(23, 20);
             this.cmdPaste.Text = "Paste";
             this.cmdPaste.Click += new System.EventHandler(this.cmdPaste_Click);
-            // 
-            // toolStripSeparator3
-            // 
-            this.toolStripSeparator3.Name = "toolStripSeparator3";
-            this.toolStripSeparator3.Size = new System.Drawing.Size(6, 23);
             // 
             // cmdBold
             // 
@@ -352,11 +350,6 @@
             this.cmdStrikeout.Text = "Strikeout";
             this.cmdStrikeout.Click += new System.EventHandler(this.cmdStrikeout_Click);
             // 
-            // toolStripSeparator4
-            // 
-            this.toolStripSeparator4.Name = "toolStripSeparator4";
-            this.toolStripSeparator4.Size = new System.Drawing.Size(6, 23);
-            // 
             // cmdFont
             // 
             this.cmdFont.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
@@ -387,10 +380,15 @@
             this.cmdTextColor.Text = "Text Color";
             this.cmdTextColor.Click += new System.EventHandler(this.cmdTextColor_Click);
             // 
-            // toolStripSeparator5
+            // cmdClearFormat
             // 
-            this.toolStripSeparator5.Name = "toolStripSeparator5";
-            this.toolStripSeparator5.Size = new System.Drawing.Size(6, 23);
+            this.cmdClearFormat.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.cmdClearFormat.Image = global::SimpleEditor.Properties.Resources.cmd_clear_format;
+            this.cmdClearFormat.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.cmdClearFormat.Name = "cmdClearFormat";
+            this.cmdClearFormat.Size = new System.Drawing.Size(23, 20);
+            this.cmdClearFormat.Text = "Clear Format";
+            this.cmdClearFormat.Click += new System.EventHandler(this.cmdClearFormat_Click);
             // 
             // cmdAlignLeft
             // 
@@ -422,11 +420,6 @@
             this.cmdAlignRight.Text = "Align Right";
             this.cmdAlignRight.Click += new System.EventHandler(this.cmdAlignRight_Click);
             // 
-            // toolStripSeparator6
-            // 
-            this.toolStripSeparator6.Name = "toolStripSeparator6";
-            this.toolStripSeparator6.Size = new System.Drawing.Size(6, 23);
-            // 
             // cmdBullets
             // 
             this.cmdBullets.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
@@ -457,11 +450,6 @@
             this.cmdUnindent.Text = "Unindent";
             this.cmdUnindent.Click += new System.EventHandler(this.cmdUnindent_Click);
             // 
-            // toolStripSeparator7
-            // 
-            this.toolStripSeparator7.Name = "toolStripSeparator7";
-            this.toolStripSeparator7.Size = new System.Drawing.Size(6, 23);
-            // 
             // cmdAbout
             // 
             this.cmdAbout.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
@@ -472,21 +460,45 @@
             this.cmdAbout.Text = "About";
             this.cmdAbout.Click += new System.EventHandler(this.cmdAbout_Click);
             // 
-            // statusStrip
+            // ctxCut
             // 
-            this.statusStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.statusLabel});
-            this.statusStrip.Location = new System.Drawing.Point(0, 539);
-            this.statusStrip.Name = "statusStrip";
-            this.statusStrip.Size = new System.Drawing.Size(784, 22);
-            this.statusStrip.TabIndex = 2;
-            this.statusStrip.Text = "statusStrip";
+            this.ctxCut.Image = global::SimpleEditor.Properties.Resources.cmd_cut;
+            this.ctxCut.Name = "ctxCut";
+            this.ctxCut.Size = new System.Drawing.Size(122, 22);
+            this.ctxCut.Text = "Cut";
+            this.ctxCut.Click += new System.EventHandler(this.cmdCut_Click);
             // 
-            // statusLabel
+            // ctxCopy
             // 
-            this.statusLabel.Name = "statusLabel";
-            this.statusLabel.Size = new System.Drawing.Size(91, 17);
-            this.statusLabel.Text = "Baris 1, Kolom 1";
+            this.ctxCopy.Image = global::SimpleEditor.Properties.Resources.cmd_copy;
+            this.ctxCopy.Name = "ctxCopy";
+            this.ctxCopy.Size = new System.Drawing.Size(122, 22);
+            this.ctxCopy.Text = "Copy";
+            this.ctxCopy.Click += new System.EventHandler(this.cmdCopy_Click);
+            // 
+            // ctxPaste
+            // 
+            this.ctxPaste.Image = global::SimpleEditor.Properties.Resources.cmd_paste;
+            this.ctxPaste.Name = "ctxPaste";
+            this.ctxPaste.Size = new System.Drawing.Size(122, 22);
+            this.ctxPaste.Text = "Paste";
+            this.ctxPaste.Click += new System.EventHandler(this.cmdPaste_Click);
+            // 
+            // ctxSelectAll
+            // 
+            this.ctxSelectAll.Image = global::SimpleEditor.Properties.Resources.cmd_select_all;
+            this.ctxSelectAll.Name = "ctxSelectAll";
+            this.ctxSelectAll.Size = new System.Drawing.Size(122, 22);
+            this.ctxSelectAll.Text = "Select All";
+            this.ctxSelectAll.Click += new System.EventHandler(this.cmdSelectAll_Click);
+            // 
+            // ctxDelete
+            // 
+            this.ctxDelete.Image = global::SimpleEditor.Properties.Resources.cmd_delete;
+            this.ctxDelete.Name = "ctxDelete";
+            this.ctxDelete.Size = new System.Drawing.Size(122, 22);
+            this.ctxDelete.Text = "Delete";
+            this.ctxDelete.Click += new System.EventHandler(this.cmdDelete_Click);
             // 
             // RichTextEditor
             // 
@@ -557,6 +569,7 @@
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator7;
         private System.Windows.Forms.ToolStripButton cmdAbout;
         private System.Windows.Forms.ToolStripButton cmdNew;
+        private System.Windows.Forms.ToolStripButton cmdClearFormat;
     }
 }
 

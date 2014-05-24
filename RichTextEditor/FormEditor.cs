@@ -8,11 +8,13 @@ namespace SimpleEditor
     public partial class RichTextEditor : Form
     {
         DataFormats.Format rtf = DataFormats.GetFormat(DataFormats.Rtf);
+        Font defaultFont;
         int indentSize = 30;
 
         public RichTextEditor()
         {
             InitializeComponent();
+            defaultFont = richTextBox.Font;
             enableSelectionCtrlView(false);
             toggleAlignView();
         }
@@ -351,6 +353,16 @@ namespace SimpleEditor
         private void cmdNew_Click(object sender, EventArgs e)
         {
             richTextBox.Clear();
+        }
+
+        private void cmdClearFormat_Click(object sender, EventArgs e)
+        {
+            richTextBox.SelectionColor = Color.Black;
+            richTextBox.SelectionBackColor = Color.White;
+            richTextBox.SelectionAlignment = HorizontalAlignment.Left;
+            richTextBox.SelectionBullet = false;
+            richTextBox.SelectionIndent = 0;
+            richTextBox.SelectionFont = defaultFont;
         }
 
         # endregion
