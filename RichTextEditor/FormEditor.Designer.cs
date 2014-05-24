@@ -29,13 +29,12 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RichTextEditor));
             this.richTextBox = new System.Windows.Forms.RichTextBox();
             this.contextMenuStrip = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.ctxCut = new System.Windows.Forms.ToolStripMenuItem();
             this.ctxCopy = new System.Windows.Forms.ToolStripMenuItem();
             this.ctxPaste = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator7 = new System.Windows.Forms.ToolStripSeparator();
+            this.toolStripSeparator8 = new System.Windows.Forms.ToolStripSeparator();
             this.ctxSelectAll = new System.Windows.Forms.ToolStripMenuItem();
             this.ctxDelete = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStrip = new System.Windows.Forms.ToolStrip();
@@ -68,7 +67,7 @@
             this.cmdBullets = new System.Windows.Forms.ToolStripButton();
             this.cmdIndent = new System.Windows.Forms.ToolStripButton();
             this.cmdUnindent = new System.Windows.Forms.ToolStripButton();
-            this.toolStripSeparator8 = new System.Windows.Forms.ToolStripSeparator();
+            this.toolStripSeparator7 = new System.Windows.Forms.ToolStripSeparator();
             this.cmdAbout = new System.Windows.Forms.ToolStripButton();
             this.openFileDialog = new System.Windows.Forms.OpenFileDialog();
             this.saveFileDialog = new System.Windows.Forms.SaveFileDialog();
@@ -104,7 +103,7 @@
             this.ctxCut,
             this.ctxCopy,
             this.ctxPaste,
-            this.toolStripSeparator7,
+            this.toolStripSeparator8,
             this.ctxSelectAll,
             this.ctxDelete});
             this.contextMenuStrip.Name = "contextMenuStrip";
@@ -112,7 +111,7 @@
             // 
             // ctxCut
             // 
-            this.ctxCut.Image = ((System.Drawing.Image)(resources.GetObject("ctxCut.Image")));
+            this.ctxCut.Image = global::SimpleEditor.Properties.Resources.cmd_cut;
             this.ctxCut.Name = "ctxCut";
             this.ctxCut.Size = new System.Drawing.Size(122, 22);
             this.ctxCut.Text = "Cut";
@@ -120,7 +119,7 @@
             // 
             // ctxCopy
             // 
-            this.ctxCopy.Image = global::SimpleEditor.Properties.Resources.copy;
+            this.ctxCopy.Image = global::SimpleEditor.Properties.Resources.cmd_copy;
             this.ctxCopy.Name = "ctxCopy";
             this.ctxCopy.Size = new System.Drawing.Size(122, 22);
             this.ctxCopy.Text = "Copy";
@@ -128,20 +127,20 @@
             // 
             // ctxPaste
             // 
-            this.ctxPaste.Image = global::SimpleEditor.Properties.Resources.paste;
+            this.ctxPaste.Image = global::SimpleEditor.Properties.Resources.cmd_paste;
             this.ctxPaste.Name = "ctxPaste";
             this.ctxPaste.Size = new System.Drawing.Size(122, 22);
             this.ctxPaste.Text = "Paste";
             this.ctxPaste.Click += new System.EventHandler(this.cmdPaste_Click);
             // 
-            // toolStripSeparator7
+            // toolStripSeparator8
             // 
-            this.toolStripSeparator7.Name = "toolStripSeparator7";
-            this.toolStripSeparator7.Size = new System.Drawing.Size(119, 6);
+            this.toolStripSeparator8.Name = "toolStripSeparator8";
+            this.toolStripSeparator8.Size = new System.Drawing.Size(119, 6);
             // 
             // ctxSelectAll
             // 
-            this.ctxSelectAll.Image = global::SimpleEditor.Properties.Resources.select_all;
+            this.ctxSelectAll.Image = global::SimpleEditor.Properties.Resources.cmd_select_all;
             this.ctxSelectAll.Name = "ctxSelectAll";
             this.ctxSelectAll.Size = new System.Drawing.Size(122, 22);
             this.ctxSelectAll.Text = "Select All";
@@ -149,7 +148,7 @@
             // 
             // ctxDelete
             // 
-            this.ctxDelete.Image = global::SimpleEditor.Properties.Resources.delete;
+            this.ctxDelete.Image = global::SimpleEditor.Properties.Resources.cmd_delete;
             this.ctxDelete.Name = "ctxDelete";
             this.ctxDelete.Size = new System.Drawing.Size(122, 22);
             this.ctxDelete.Text = "Delete";
@@ -189,7 +188,7 @@
             this.cmdBullets,
             this.cmdIndent,
             this.cmdUnindent,
-            this.toolStripSeparator8,
+            this.toolStripSeparator7,
             this.cmdAbout});
             this.toolStrip.Location = new System.Drawing.Point(0, 0);
             this.toolStrip.Name = "toolStrip";
@@ -201,7 +200,7 @@
             // cmdOpen
             // 
             this.cmdOpen.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.cmdOpen.Image = global::SimpleEditor.Properties.Resources.open;
+            this.cmdOpen.Image = global::SimpleEditor.Properties.Resources.cmd_open;
             this.cmdOpen.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.cmdOpen.Name = "cmdOpen";
             this.cmdOpen.Size = new System.Drawing.Size(23, 20);
@@ -211,7 +210,7 @@
             // cmdNew
             // 
             this.cmdNew.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.cmdNew.Image = global::SimpleEditor.Properties.Resources.new_file;
+            this.cmdNew.Image = global::SimpleEditor.Properties.Resources.cmd_new;
             this.cmdNew.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.cmdNew.Name = "cmdNew";
             this.cmdNew.Size = new System.Drawing.Size(23, 20);
@@ -221,7 +220,7 @@
             // cmdSave
             // 
             this.cmdSave.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.cmdSave.Image = global::SimpleEditor.Properties.Resources.save;
+            this.cmdSave.Image = global::SimpleEditor.Properties.Resources.cmd_save;
             this.cmdSave.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.cmdSave.Name = "cmdSave";
             this.cmdSave.Size = new System.Drawing.Size(23, 20);
@@ -236,7 +235,7 @@
             // cmdUndo
             // 
             this.cmdUndo.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.cmdUndo.Image = global::SimpleEditor.Properties.Resources.undo;
+            this.cmdUndo.Image = global::SimpleEditor.Properties.Resources.cmd_undo;
             this.cmdUndo.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.cmdUndo.Name = "cmdUndo";
             this.cmdUndo.Size = new System.Drawing.Size(23, 20);
@@ -246,7 +245,7 @@
             // cmdRedo
             // 
             this.cmdRedo.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.cmdRedo.Image = global::SimpleEditor.Properties.Resources.redo;
+            this.cmdRedo.Image = global::SimpleEditor.Properties.Resources.cmd_redo;
             this.cmdRedo.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.cmdRedo.Name = "cmdRedo";
             this.cmdRedo.Size = new System.Drawing.Size(23, 20);
@@ -256,7 +255,7 @@
             // cmdSelectAll
             // 
             this.cmdSelectAll.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.cmdSelectAll.Image = global::SimpleEditor.Properties.Resources.select_all;
+            this.cmdSelectAll.Image = global::SimpleEditor.Properties.Resources.cmd_select_all;
             this.cmdSelectAll.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.cmdSelectAll.Name = "cmdSelectAll";
             this.cmdSelectAll.Size = new System.Drawing.Size(23, 20);
@@ -266,7 +265,7 @@
             // cmdDelete
             // 
             this.cmdDelete.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.cmdDelete.Image = global::SimpleEditor.Properties.Resources.delete;
+            this.cmdDelete.Image = global::SimpleEditor.Properties.Resources.cmd_delete;
             this.cmdDelete.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.cmdDelete.Name = "cmdDelete";
             this.cmdDelete.Size = new System.Drawing.Size(23, 20);
@@ -281,7 +280,7 @@
             // cmdCut
             // 
             this.cmdCut.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.cmdCut.Image = global::SimpleEditor.Properties.Resources.cut;
+            this.cmdCut.Image = global::SimpleEditor.Properties.Resources.cmd_cut;
             this.cmdCut.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.cmdCut.Name = "cmdCut";
             this.cmdCut.Size = new System.Drawing.Size(23, 20);
@@ -291,7 +290,7 @@
             // cmdCopy
             // 
             this.cmdCopy.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.cmdCopy.Image = global::SimpleEditor.Properties.Resources.copy;
+            this.cmdCopy.Image = global::SimpleEditor.Properties.Resources.cmd_copy;
             this.cmdCopy.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.cmdCopy.Name = "cmdCopy";
             this.cmdCopy.Size = new System.Drawing.Size(23, 20);
@@ -301,7 +300,7 @@
             // cmdPaste
             // 
             this.cmdPaste.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.cmdPaste.Image = global::SimpleEditor.Properties.Resources.paste;
+            this.cmdPaste.Image = global::SimpleEditor.Properties.Resources.cmd_paste;
             this.cmdPaste.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.cmdPaste.Name = "cmdPaste";
             this.cmdPaste.Size = new System.Drawing.Size(23, 20);
@@ -316,7 +315,7 @@
             // cmdBold
             // 
             this.cmdBold.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.cmdBold.Image = global::SimpleEditor.Properties.Resources.text_bold;
+            this.cmdBold.Image = global::SimpleEditor.Properties.Resources.cmd_bold;
             this.cmdBold.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.cmdBold.Name = "cmdBold";
             this.cmdBold.Size = new System.Drawing.Size(23, 20);
@@ -326,7 +325,7 @@
             // cmdItalic
             // 
             this.cmdItalic.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.cmdItalic.Image = global::SimpleEditor.Properties.Resources.text_italic;
+            this.cmdItalic.Image = global::SimpleEditor.Properties.Resources.cmd_italic;
             this.cmdItalic.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.cmdItalic.Name = "cmdItalic";
             this.cmdItalic.Size = new System.Drawing.Size(23, 20);
@@ -336,7 +335,7 @@
             // cmdUnderline
             // 
             this.cmdUnderline.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.cmdUnderline.Image = global::SimpleEditor.Properties.Resources.text_underline;
+            this.cmdUnderline.Image = global::SimpleEditor.Properties.Resources.cmd_underline;
             this.cmdUnderline.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.cmdUnderline.Name = "cmdUnderline";
             this.cmdUnderline.Size = new System.Drawing.Size(23, 20);
@@ -346,7 +345,7 @@
             // cmdStrikeout
             // 
             this.cmdStrikeout.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.cmdStrikeout.Image = global::SimpleEditor.Properties.Resources.text_strikethrough;
+            this.cmdStrikeout.Image = global::SimpleEditor.Properties.Resources.cmd_strikethrough;
             this.cmdStrikeout.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.cmdStrikeout.Name = "cmdStrikeout";
             this.cmdStrikeout.Size = new System.Drawing.Size(23, 20);
@@ -361,7 +360,7 @@
             // cmdFont
             // 
             this.cmdFont.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.cmdFont.Image = global::SimpleEditor.Properties.Resources.font;
+            this.cmdFont.Image = global::SimpleEditor.Properties.Resources.cmd_font;
             this.cmdFont.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.cmdFont.Name = "cmdFont";
             this.cmdFont.Size = new System.Drawing.Size(23, 20);
@@ -371,7 +370,7 @@
             // cmdBackColor
             // 
             this.cmdBackColor.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.cmdBackColor.Image = global::SimpleEditor.Properties.Resources.text_back_color;
+            this.cmdBackColor.Image = global::SimpleEditor.Properties.Resources.cmd_back_color;
             this.cmdBackColor.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.cmdBackColor.Name = "cmdBackColor";
             this.cmdBackColor.Size = new System.Drawing.Size(23, 20);
@@ -381,7 +380,7 @@
             // cmdTextColor
             // 
             this.cmdTextColor.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.cmdTextColor.Image = global::SimpleEditor.Properties.Resources.text_color;
+            this.cmdTextColor.Image = global::SimpleEditor.Properties.Resources.cmd_text_color;
             this.cmdTextColor.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.cmdTextColor.Name = "cmdTextColor";
             this.cmdTextColor.Size = new System.Drawing.Size(23, 20);
@@ -396,7 +395,7 @@
             // cmdAlignLeft
             // 
             this.cmdAlignLeft.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.cmdAlignLeft.Image = global::SimpleEditor.Properties.Resources.text_align_left;
+            this.cmdAlignLeft.Image = global::SimpleEditor.Properties.Resources.cmd_align_left;
             this.cmdAlignLeft.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.cmdAlignLeft.Name = "cmdAlignLeft";
             this.cmdAlignLeft.Size = new System.Drawing.Size(23, 20);
@@ -406,7 +405,7 @@
             // cmdAlignCenter
             // 
             this.cmdAlignCenter.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.cmdAlignCenter.Image = global::SimpleEditor.Properties.Resources.text_align_center;
+            this.cmdAlignCenter.Image = global::SimpleEditor.Properties.Resources.cmd_align_center;
             this.cmdAlignCenter.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.cmdAlignCenter.Name = "cmdAlignCenter";
             this.cmdAlignCenter.Size = new System.Drawing.Size(23, 20);
@@ -416,7 +415,7 @@
             // cmdAlignRight
             // 
             this.cmdAlignRight.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.cmdAlignRight.Image = global::SimpleEditor.Properties.Resources.text_align_right;
+            this.cmdAlignRight.Image = global::SimpleEditor.Properties.Resources.cmd_align_right;
             this.cmdAlignRight.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.cmdAlignRight.Name = "cmdAlignRight";
             this.cmdAlignRight.Size = new System.Drawing.Size(23, 20);
@@ -432,7 +431,7 @@
             // 
             this.cmdBullets.CheckOnClick = true;
             this.cmdBullets.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.cmdBullets.Image = global::SimpleEditor.Properties.Resources.text_list_bullets;
+            this.cmdBullets.Image = global::SimpleEditor.Properties.Resources.cmd_bullets;
             this.cmdBullets.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.cmdBullets.Name = "cmdBullets";
             this.cmdBullets.Size = new System.Drawing.Size(23, 20);
@@ -443,7 +442,7 @@
             // 
             this.cmdIndent.CheckOnClick = true;
             this.cmdIndent.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.cmdIndent.Image = global::SimpleEditor.Properties.Resources.text_indent;
+            this.cmdIndent.Image = global::SimpleEditor.Properties.Resources.cmd_indent;
             this.cmdIndent.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.cmdIndent.Name = "cmdIndent";
             this.cmdIndent.Size = new System.Drawing.Size(23, 20);
@@ -453,22 +452,22 @@
             // cmdUnindent
             // 
             this.cmdUnindent.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.cmdUnindent.Image = global::SimpleEditor.Properties.Resources.text_indent_remove;
+            this.cmdUnindent.Image = global::SimpleEditor.Properties.Resources.cmd_unindent;
             this.cmdUnindent.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.cmdUnindent.Name = "cmdUnindent";
             this.cmdUnindent.Size = new System.Drawing.Size(23, 20);
             this.cmdUnindent.Text = "Unindent";
             this.cmdUnindent.Click += new System.EventHandler(this.cmdUnindent_Click);
             // 
-            // toolStripSeparator8
+            // toolStripSeparator7
             // 
-            this.toolStripSeparator8.Name = "toolStripSeparator8";
-            this.toolStripSeparator8.Size = new System.Drawing.Size(6, 23);
+            this.toolStripSeparator7.Name = "toolStripSeparator7";
+            this.toolStripSeparator7.Size = new System.Drawing.Size(6, 23);
             // 
             // cmdAbout
             // 
             this.cmdAbout.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.cmdAbout.Image = global::SimpleEditor.Properties.Resources.info;
+            this.cmdAbout.Image = global::SimpleEditor.Properties.Resources.cmd_info;
             this.cmdAbout.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.cmdAbout.Name = "cmdAbout";
             this.cmdAbout.Size = new System.Drawing.Size(23, 20);
@@ -553,11 +552,11 @@
         private System.Windows.Forms.ToolStripMenuItem ctxCut;
         private System.Windows.Forms.ToolStripMenuItem ctxCopy;
         private System.Windows.Forms.ToolStripMenuItem ctxPaste;
-        private System.Windows.Forms.ToolStripSeparator toolStripSeparator7;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator8;
         private System.Windows.Forms.ToolStripMenuItem ctxSelectAll;
         private System.Windows.Forms.ToolStripMenuItem ctxDelete;
         private System.Windows.Forms.ToolStripButton cmdSelectAll;
-        private System.Windows.Forms.ToolStripSeparator toolStripSeparator8;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator7;
         private System.Windows.Forms.ToolStripButton cmdAbout;
         private System.Windows.Forms.ToolStripButton cmdNew;
     }

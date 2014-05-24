@@ -63,9 +63,9 @@ namespace SimpleEditor.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap copy {
+        internal static System.Drawing.Bitmap cmd_align_center {
             get {
-                object obj = ResourceManager.GetObject("copy", resourceCulture);
+                object obj = ResourceManager.GetObject("cmd_align_center", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -73,9 +73,9 @@ namespace SimpleEditor.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap cut {
+        internal static System.Drawing.Bitmap cmd_align_left {
             get {
-                object obj = ResourceManager.GetObject("cut", resourceCulture);
+                object obj = ResourceManager.GetObject("cmd_align_left", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -83,9 +83,9 @@ namespace SimpleEditor.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap delete {
+        internal static System.Drawing.Bitmap cmd_align_right {
             get {
-                object obj = ResourceManager.GetObject("delete", resourceCulture);
+                object obj = ResourceManager.GetObject("cmd_align_right", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -93,9 +93,9 @@ namespace SimpleEditor.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap font {
+        internal static System.Drawing.Bitmap cmd_back_color {
             get {
-                object obj = ResourceManager.GetObject("font", resourceCulture);
+                object obj = ResourceManager.GetObject("cmd_back_color", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -103,9 +103,9 @@ namespace SimpleEditor.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap info {
+        internal static System.Drawing.Bitmap cmd_bold {
             get {
-                object obj = ResourceManager.GetObject("info", resourceCulture);
+                object obj = ResourceManager.GetObject("cmd_bold", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -113,9 +113,9 @@ namespace SimpleEditor.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap new_file {
+        internal static System.Drawing.Bitmap cmd_bullets {
             get {
-                object obj = ResourceManager.GetObject("new_file", resourceCulture);
+                object obj = ResourceManager.GetObject("cmd_bullets", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -123,9 +123,9 @@ namespace SimpleEditor.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap open {
+        internal static System.Drawing.Bitmap cmd_copy {
             get {
-                object obj = ResourceManager.GetObject("open", resourceCulture);
+                object obj = ResourceManager.GetObject("cmd_copy", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -133,9 +133,9 @@ namespace SimpleEditor.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap paste {
+        internal static System.Drawing.Bitmap cmd_cut {
             get {
-                object obj = ResourceManager.GetObject("paste", resourceCulture);
+                object obj = ResourceManager.GetObject("cmd_cut", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -143,9 +143,9 @@ namespace SimpleEditor.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap redo {
+        internal static System.Drawing.Bitmap cmd_delete {
             get {
-                object obj = ResourceManager.GetObject("redo", resourceCulture);
+                object obj = ResourceManager.GetObject("cmd_delete", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -153,9 +153,9 @@ namespace SimpleEditor.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap save {
+        internal static System.Drawing.Bitmap cmd_font {
             get {
-                object obj = ResourceManager.GetObject("save", resourceCulture);
+                object obj = ResourceManager.GetObject("cmd_font", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -163,9 +163,9 @@ namespace SimpleEditor.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap select_all {
+        internal static System.Drawing.Bitmap cmd_indent {
             get {
-                object obj = ResourceManager.GetObject("select_all", resourceCulture);
+                object obj = ResourceManager.GetObject("cmd_indent", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -173,9 +173,9 @@ namespace SimpleEditor.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap text_align_center {
+        internal static System.Drawing.Bitmap cmd_info {
             get {
-                object obj = ResourceManager.GetObject("text_align_center", resourceCulture);
+                object obj = ResourceManager.GetObject("cmd_info", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -183,9 +183,9 @@ namespace SimpleEditor.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap text_align_left {
+        internal static System.Drawing.Bitmap cmd_italic {
             get {
-                object obj = ResourceManager.GetObject("text_align_left", resourceCulture);
+                object obj = ResourceManager.GetObject("cmd_italic", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -193,9 +193,9 @@ namespace SimpleEditor.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap text_align_right {
+        internal static System.Drawing.Bitmap cmd_new {
             get {
-                object obj = ResourceManager.GetObject("text_align_right", resourceCulture);
+                object obj = ResourceManager.GetObject("cmd_new", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -203,9 +203,9 @@ namespace SimpleEditor.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap text_back_color {
+        internal static System.Drawing.Bitmap cmd_open {
             get {
-                object obj = ResourceManager.GetObject("text_back_color", resourceCulture);
+                object obj = ResourceManager.GetObject("cmd_open", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -213,9 +213,9 @@ namespace SimpleEditor.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap text_bold {
+        internal static System.Drawing.Bitmap cmd_paste {
             get {
-                object obj = ResourceManager.GetObject("text_bold", resourceCulture);
+                object obj = ResourceManager.GetObject("cmd_paste", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -223,9 +223,9 @@ namespace SimpleEditor.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap text_color {
+        internal static System.Drawing.Bitmap cmd_redo {
             get {
-                object obj = ResourceManager.GetObject("text_color", resourceCulture);
+                object obj = ResourceManager.GetObject("cmd_redo", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -233,9 +233,9 @@ namespace SimpleEditor.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap text_indent {
+        internal static System.Drawing.Bitmap cmd_save {
             get {
-                object obj = ResourceManager.GetObject("text_indent", resourceCulture);
+                object obj = ResourceManager.GetObject("cmd_save", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -243,9 +243,9 @@ namespace SimpleEditor.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap text_indent_remove {
+        internal static System.Drawing.Bitmap cmd_select_all {
             get {
-                object obj = ResourceManager.GetObject("text_indent_remove", resourceCulture);
+                object obj = ResourceManager.GetObject("cmd_select_all", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -253,9 +253,9 @@ namespace SimpleEditor.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap text_italic {
+        internal static System.Drawing.Bitmap cmd_strikethrough {
             get {
-                object obj = ResourceManager.GetObject("text_italic", resourceCulture);
+                object obj = ResourceManager.GetObject("cmd_strikethrough", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -263,9 +263,9 @@ namespace SimpleEditor.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap text_list_bullets {
+        internal static System.Drawing.Bitmap cmd_text_color {
             get {
-                object obj = ResourceManager.GetObject("text_list_bullets", resourceCulture);
+                object obj = ResourceManager.GetObject("cmd_text_color", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -273,9 +273,9 @@ namespace SimpleEditor.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap text_strikethrough {
+        internal static System.Drawing.Bitmap cmd_underline {
             get {
-                object obj = ResourceManager.GetObject("text_strikethrough", resourceCulture);
+                object obj = ResourceManager.GetObject("cmd_underline", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -283,9 +283,9 @@ namespace SimpleEditor.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap text_underline {
+        internal static System.Drawing.Bitmap cmd_undo {
             get {
-                object obj = ResourceManager.GetObject("text_underline", resourceCulture);
+                object obj = ResourceManager.GetObject("cmd_undo", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -293,9 +293,9 @@ namespace SimpleEditor.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap undo {
+        internal static System.Drawing.Bitmap cmd_unindent {
             get {
-                object obj = ResourceManager.GetObject("undo", resourceCulture);
+                object obj = ResourceManager.GetObject("cmd_unindent", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

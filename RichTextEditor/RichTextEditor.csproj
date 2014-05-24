@@ -57,18 +57,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\Settings.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
@@ -78,128 +78,78 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
-    <None Include="Resources\Copy.png" />
+    <None Include="Images\cmd_align_center.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Images\arrow_redo.png" />
+    <None Include="Images\cmd_align_left.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Images\arrow_undo.png" />
+    <None Include="Images\cmd_align_right.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Images\cross.png" />
+    <None Include="Images\cmd_back_color.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Images\cursor.png" />
+    <None Include="Images\cmd_bold.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Images\cut.png" />
+    <None Include="Images\cmd_bullets.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Images\disk.png" />
+    <None Include="Images\cmd_copy.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Images\exclamation.png" />
+    <None Include="Images\cmd_cut.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Images\folder.png" />
+    <None Include="Images\cmd_delete.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Images\folder_page_white.png" />
+    <None Include="Images\cmd_font.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Images\font.png" />
+    <None Include="Images\cmd_indent.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Images\highlighter.png" />
+    <None Include="Images\cmd_info.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Images\page.png" />
+    <None Include="Images\cmd_italic.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Images\page_copy.png" />
+    <None Include="Images\cmd_new.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Images\palette.png" />
+    <None Include="Images\cmd_open.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Images\paste_plain.png" />
+    <None Include="Images\cmd_paste.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Images\text_align_center.png" />
+    <None Include="Images\cmd_redo.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Images\text_align_justify.png" />
+    <None Include="Images\cmd_save.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Images\text_align_left.png" />
+    <None Include="Images\cmd_select_all.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Images\text_align_right.png" />
+    <None Include="Images\cmd_strikethrough.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Images\text_bold.png" />
+    <None Include="Images\cmd_text_color.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Images\text_indent.png" />
+    <None Include="Images\cmd_underline.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Images\text_indent_remove.png" />
+    <None Include="Images\cmd_undo.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Images\text_italic.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Images\text_list_bullets.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Images\text_list_numbers.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Images\text_strikethrough.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Images\text_underline.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Images\copy.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Images\delete.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Images\info.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Images\new.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Images\open.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Images\paste.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Images\redo.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Images\save.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Images\select_all.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Images\text_back_color.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Images\text_color.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Images\undo.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Images\new_file.png" />
+    <None Include="Images\cmd_unindent.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
